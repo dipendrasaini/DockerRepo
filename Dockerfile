@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 RUN unzip dpot.zip
 RUN cp -rvf dpot/*
 RUN rm -rf dpot dpot.zip
-CMD ["/user/sbin/httpd","-D","FOREGROUND"]
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
 
 #https://www.free-css.com/assets/files/free-css-templates/download/page264/pullo.zip =>pullo.zip
