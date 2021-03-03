@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER dipedrasaini24@gmail.com
-RUN yum install -y httpd zip unzip
+RUN yum install -y httpd 
+RUN yum install -y unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page263/dpot.zip  /var/www/html/
 WORKDIR /var/www/html
 RUN unzip dpot.zip
