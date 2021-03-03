@@ -5,7 +5,7 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page263/dp
 WORKDIR /var/www/html
 RUN unzip dpot.zip
 RUN cp -rvf dpot/*
-RUN rm -rf dpot.zip dpot.zip.zip
+RUN rm -rf dpot dpot.zip
 CMD ["/user/sbin/httpd","-D,"FOREGROUND"]
 EXPOSE 80
 
