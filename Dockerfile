@@ -2,11 +2,11 @@ FROM centos:latest
 MAINTAINER dipedrasaini24@gmail.com
 RUN yum install -y httpd 
 RUN yum install -y unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page264/pullo.zip  /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip  /var/www/html/
 WORKDIR /var/www/html
-RUN unzip pullo.zip
-RUN cp -rvf pullo/* .
-RUN rm -rf pullo pullo.zip
+RUN unzip loxury.zip
+RUN cp -rvf loxury/* .
+RUN rm -rf loxury loxury.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
 
