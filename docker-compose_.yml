@@ -1,0 +1,6 @@
+
+version: '3'
+services:
+        starboy:
+                build: .
+                image: starboy:1
