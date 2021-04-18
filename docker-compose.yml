@@ -26,3 +26,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
 volumes:
   db_data: {}
+
+#file name docker-compose.yml
+#run docker-compose up -d
+#stop docker-compose down
